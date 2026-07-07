@@ -3,7 +3,7 @@ import { PortfolioItem, ResumeItem, SkillGroup, EducationItem } from './types';
 export const personalInfo = {
   name: "Jad Aljersh",
   title: "GIS Analyst & Developer",
-  tagline: "Bridging spatial data analytics & web cartography",
+  tagline: "",
   bio: "I'm a Geographic Information Systems (GIS) Analyst and Full-Stack Spatial Developer based in Las Vegas, NV. Leveraging robust spatial databases, ETL pipelines, and high-performance web-mapping libraries, I transform vast geospatial datasets into clean interactive experiences. My expertise spans advanced raster/vector geoprocessing, and developing full-stack web architectures for real-time spatial analytics.",
   contact: {
     email: "jadaljersh@outlook.com",

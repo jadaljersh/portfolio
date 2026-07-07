@@ -32,49 +32,14 @@ export default function ResumeTab() {
         
         {/* Top styling elements - not printed */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-[#2563EB] print:hidden" />
-        
-        {/* Floating Print / Copy Buttons */}
-        <div className="absolute top-6 right-6 flex items-center gap-2 print:hidden">
-          <button
-            onClick={handleCopyEmail}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-semibold bg-[#F9FAFB] text-gray-700 hover:bg-gray-100 border border-[#D1D5DB] cursor-pointer transition-colors"
-            id="btn-copy-email"
-          >
-            {copiedText ? (
-              <>
-                <CheckCircle className="h-3.5 w-3.5 text-green-500" />
-                Copied!
-              </>
-            ) : (
-              <>
-                <Copy className="h-3.5 w-3.5" />
-                Copy Email
-              </>
-            )}
-          </button>
-          
-          <button
-            onClick={handlePrint}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-semibold bg-white text-gray-700 hover:bg-gray-100 border border-[#D1D5DB] cursor-pointer transition-colors"
-            id="btn-print-resume"
-          >
-            <Printer className="h-3.5 w-3.5 text-[#2563EB]" />
-            Print CV
-          </button>
-        </div>
-
+      
         {/* 1. Resume Header */}
         <div className="border-b border-[#E5E7EB] pb-8 flex flex-col md:flex-row md:items-center justify-between gap-6 print:pb-6">
           <div>
             <h1 className="font-sans font-extrabold text-3xl sm:text-4xl text-gray-900 tracking-tight mb-2">
-              {personalInfo.name}
             </h1>
-            <p className="text-[#2563EB] font-bold text-lg tracking-tight flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-[#2563EB] animate-pulse print:hidden" />
-              {personalInfo.title}
-            </p>
+
             <p className="text-gray-500 text-sm mt-2 max-w-xl leading-relaxed print:text-slate-700 font-normal">
-              {personalInfo.tagline} &mdash; Specialist leading the deployment of robust spatial architectures, raster calculations, and utility network systems.
             </p>
           </div>
 
