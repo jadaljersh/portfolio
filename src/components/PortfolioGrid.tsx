@@ -143,7 +143,7 @@ export default function PortfolioGrid({ items, defaultType }: GridProps) {
               <div className="p-5 space-y-3">
                 <div className="space-y-1">
                   <span className="text-[9px] font-extrabold text-[#2563EB] uppercase tracking-widest block">
-                    {item.type === 'map' ? '' : item.type === 'dev' ? 'Spatial Assembly' : ''}
+                    {item.type === 'map' ? '' : item.type === 'dev' ? '' : ''}
                   </span>
                   <h3 className="font-sans font-extrabold text-gray-900 text-base leading-snug group-hover:text-[#2563EB] transition-colors">
                     {item.title}

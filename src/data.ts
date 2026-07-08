@@ -603,6 +603,25 @@ export const portfolioItems: PortfolioItem[] = [
     }
   },
 //--------------------------------------------------------------------------------------------------
+  {
+    id: "dev-1",
+    title: "Automating View Data Updates Using a CSV File Input",
+    tagline: "ArcGIS Script Tool",
+    description: "To automate the creation of updated PDF maps from a dynamic CSV dataset, this ArcGIS script tool converts an incoming .csv file into a geodatabase table, cleans up any empty default fields, and appends the new records into a truncated database table. The script then dynamically updates the map layout based on the data type, applies optional date-based definition queries, and zooms the map extent to match the active layer's features. Finally, it exports the tailored map view as a PDF to a designated output folder, turning what would be a repetitive manual join and layout process into a streamlined, automated workflow.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/a045cf20e6d640869426a26cf656220c/data",
+    type: "dev",
+    tags: ["ArcGIS Script Tool", "Automation", "Data Update"],
+    links: {
+      demo: "https://storymaps.arcgis.com/stories/32affbdb78cd4d42b558d22dcc33f204"
+    },
+    customLinks: [
+      {
+        linkTitle: "Flowchart",
+        linkUrl: "https://jad.maps.arcgis.com/sharing/rest/content/items/a045cf20e6d640869426a26cf656220c/data"
+      }
+    ]
+  },
+//--------------------------------------------------------------------------------------------------
 
   {
     id: "project-1",

@@ -6,7 +6,9 @@
 import { useState } from "react";
 import { 
   Compass, MapPin, Mail, Globe, Layers, Activity, FileText, 
-  LayoutGrid, ArrowUpRight, Github, Linkedin, Map as MapIcon, Code2
+  LayoutGrid, ArrowUpRight, Github, Linkedin, Map as MapIcon, Code2,
+  ChartBarIcon,
+  ChartColumnStacked
 } from "lucide-react";
 import { personalInfo, portfolioItems } from "./data";
 import ResumeTab from "./components/ResumeTab";
@@ -23,6 +25,7 @@ export default function App() {
   const mapItems = portfolioItems.filter(item => item.type === 'map');
   const projectItems = portfolioItems.filter(item => item.type === 'project');
   const visualizationItems = portfolioItems.filter(item => item.type === 'visualization');
+  
   return (
     <div className="min-h-screen bg-[#F3F4F6] text-[#1F2937] flex flex-col justify-between font-sans selection:bg-[#2563EB]/10 selection:text-[#2563EB] relative border-4 border-[#D1D5DB]">
       
@@ -160,7 +163,7 @@ export default function App() {
                 }`}
                 id="tab-visualization"
               >
-                <MapIcon className="h-4 w-4" />
+                <ChartColumnStacked className="h-4 w-4" />
                 Data Visualization
               </button>
 
