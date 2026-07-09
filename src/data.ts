@@ -621,6 +621,7 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ]
   },
+
 //--------------------------------------------------------------------------------------------------
 
   {
@@ -647,6 +648,33 @@ export const portfolioItems: PortfolioItem[] = [
       {
         linkTitle: "Project File and Toolbox",
         linkUrl: "https://drive.google.com/file/d/1fw8xc0uBNno3nx_pdtu0_gzlecS0y8RR/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    id: "project-2",
+    title: "Generating a Weighted Sum Using the Entropy Weight Method",
+    tagline: "Decision-Making",
+    description: "The Entropy Weight Method (EWM) is an objective decision-making technique used to calculate the relative importance of different criteria based on data variability. This project presents an automated geospatial approach for evaluating localized social vulnerability to extreme heat by integrating the Entropy Weight Method (EWM) with real-time weather forecasting. To eliminate human subjectivity in multi-criteria decision analysis, the EWM utilizes data normalization and information entropy to objectively weigh socio-economic indicators. The methodology was applied to U.S. Census Bureau American Community Survey (2016–2020) data to construct an Extreme Temperature Vulnerability Score (ETVS) for census tracts, factoring in variables such as housing type, vehicle access, poverty levels, and age demographics. By embedding this framework into a custom GIS Script Tool, the static ETVS was dynamically combined with the National Weather Service (NWS) HeatRisk product. The resulting automated pipeline generates daily bivariate forecast maps that simultaneously display physical heat risk and community susceptibility, providing a highly actionable tool for targeted emergency response and climate resilience planning.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/c6170e8840c04c7fb7e4d079ae8eca78/data",
+    type: "project",
+    tags: ["Decision-Making", "Vulnerability"],
+    details: {
+      challenge: "Conventional multi-criteria vulnerability assessments often rely on subjective human weighting, which can bias risk models and distort the true socio-economic vulnerabilities of a community.",
+      solution: "An automated GIS script tool leverages the objective Entropy Weight Method to calculate an Extreme Temperature Vulnerability Score (ETVS) by evaluating data uncertainty across key census metrics.",
+      impact: "This project enables emergency managers and urban planners to generate daily bivariate maps that precisely pinpoint where localized extreme heat intersects with the most vulnerable populations, allowing for proactive, life-saving resource allocation."
+    },
+    links: {
+      demo: "https://storymaps.arcgis.com/stories/3a60f244581a44c7bcbc34cb5fa98539"
+    },
+    customLinks: [
+      {
+        linkTitle: "Flowchart",
+        linkUrl: "https://jad.maps.arcgis.com/sharing/rest/content/items/1c8f9302f2d84627a0d7166cef753229/data"
+      },
+      {
+        linkTitle: "Interactive Map",
+        linkUrl: "https://experience.arcgis.com/experience/51b8cb31b6a841dbbf36f448308aefb1/"
       }
     ]
   }
