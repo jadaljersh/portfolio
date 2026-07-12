@@ -621,6 +621,21 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ]
   },
+  {
+    id: "dev-1",
+    title: "NOAA Weather Calendar Heatmap Using Streamlit",
+    tagline: "Streamlit",
+    description: "This project uses Streamlit to transform raw historical data from the National Oceanic and Atmospheric Administration (NOAA) into an intuitive, visually rich calendar heatmap. Built to address the limitations of standard dataset extraction, the application features three modes that allow users to study a single station's yearly footprints, perform temporal comparisons of the same station across two different years, or run real-time spatial comparisons between two stations. It  parses multiple meteorologic variables including temperature, precipitation, snowfall, and critical wind speeds, and filters complex data arrays into digestible day-by-day calendar heatmaps. By deploying this architecture to Streamlit Cloud, the project leverages a zero-configuration, serverless environment that converts a raw local script into an instantly shareable, cloud-hosted web application. Streamlit Cloud manages the underlying multi-tenant scaling and secure HTTPS data pipelines, allowing the app to smoothly process cross-origin API payloads and coordinate on-demand geospatial bounding-box math seamlessly over the web.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/1e2b90b1b0fc48f0af4d082a1c763efc/data",
+    type: "dev",
+    tags: ["Streamlit", "Data Visualization"],
+    links: {
+      demo: "https://calendarheatmaps.streamlit.app/"
+    },
+    customLinks: [
+    ]
+  },
+
 
 //--------------------------------------------------------------------------------------------------
 
