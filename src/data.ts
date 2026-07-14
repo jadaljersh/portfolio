@@ -538,6 +538,23 @@ export const portfolioItems: PortfolioItem[] = [
 //--------------------------------------------------------------------------------------------------
     {
     id: "vis-1",
+    title: "Personal Weather Station Monitor",
+    tagline: "Dashboard",
+    description: "This ArcGIS Dashboard provides real-time personal weather station (PWS) data, combining current conditions, forecasts, and environmental metrics in a clean, easy-to-read interface. The dashboard highlights the current temperature with dynamic color formatting created using Arcade expressions, allowing perceived temperature values to stand out based on predefined color thresholds. Supporting indicators display current high and low temperatures, wind speed and direction, humidity, dew point, moon phase, temperature trends, and a five-day forecast, along with a map displaying NWS alerts. Behind the scenes, the dashboard is powered by a table that is automatically updated through scheduled Python jobs running on a local computer, ensuring that the displayed weather information remains current without requiring manual updates.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/11f368f5ee884cf2a9239a00c21e8d2a/data",
+    type: "visualization",
+    tags: ["Arcade", "Dashboard"],
+    metrics: [
+      { label: "Software Used", value: "ArcGIS Dashboards" },
+      { label: "Data Source", value: "Live PWS Data From Wunderground" }
+    ],
+    links: {
+      docs: "https://jad.maps.arcgis.com/apps/dashboards/fbcc49c47c324bdf9f8c04dc09b3a3a8",
+      docsLabel: "Open Dashboard"
+    }
+  },
+    {
+    id: "vis-2",
     title: "Date and Time Heatmap",
     tagline: "Heatmap",
     description: "To generate this visualization, a data processing pipeline was established using Python and Pandas to transform raw temporal datasets into a clean, multi-dimensional matrix. The initial dataset was parsed to extract explicit day-of-year and hour components while filtering out invalid or missing temperature readings. To prevent abrupt, noisy visual transitions and accurately represent broader thermal trends, a 28-hour circular rolling mean was applied to the dataset. The data was duplicated temporally before smoothing to handle edge cases, ensuring that temperature averages transitioned seamlessly across midnight boundaries and from the end of the year back to the beginning. Finally, the smoothed data was pivoted into a 24x365 structure and exported as a JSON object, decoupling the intensive data transformation logic from the frontend and allowing the React architecture to rapidly render the interactive grid using a custom continuous color scale.",
@@ -554,7 +571,7 @@ export const portfolioItems: PortfolioItem[] = [
     }
   },
     {
-    id: "vis-2",
+    id: "vis-3",
     title: "Disadvantaged Communities (DAC) Categorical Model",
     tagline: "Bubble Chart",
     description: "This bubble chart was created using Adobe Illustrator as well. Since there is no feature in Adobe Illustrator for pie chart creation yet, the bubbles' diameters were manually calculated and created accordingly. This is one example of a relatively lengthy process that is rarely undertaken but is necessary when there is both a lack of available tools for such creative visualization, and the desired product will be the results summary of a major project. This graphic was created for the Center for Geospatial Science and Technology at California State University, Northridge.",
@@ -571,7 +588,7 @@ export const portfolioItems: PortfolioItem[] = [
     }
   },
     {
-    id: "vis-3",
+    id: "vis-4",
     title: "2020 Weather Summary for Northridge, CA",
     tagline: "Line Chart",
     description: "making charts using Adobe Illustrator can often prove useful with major projects to make the data more visually appealing, projects that involve one or a few datasets, or datasets that contain numerous fields, difficult to showcase using a readily-available feature in said applications. The following chart was created using Adobe Illustrator, displaying various weather variables recorded by the California State University, Northridge weather station in 2020.",
@@ -587,7 +604,7 @@ export const portfolioItems: PortfolioItem[] = [
     }
   },
     {
-    id: "vis-4",
+    id: "vis-5",
     title: "Interactive Average Daily Temperatures Line Chart",
     tagline: "Line Chart",
     description: "This interactive visualization displays the 30-year historical average of daily maximum and minimum temperatures for Los Angeles, California (1994–2023). To build this, raw climate data from NOAA was processed using Python and Pandas to calculate a 28-day circular rolling mean, which effectively smooths out daily weather anomalies to reveal pure seasonal trends. The processed dataset was then exported as a lightweight JSON file, allowing the React frontend to render a highly responsive, zero-dependency SVG chart featuring custom thermal gradients and precision interactive tooltips.",
