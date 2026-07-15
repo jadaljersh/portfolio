@@ -332,6 +332,23 @@ export const portfolioItems: PortfolioItem[] = [
     }
   },
     {
+    id: "map-22",
+    title: "Powerline Least Cost Path Scenarios",
+    tagline: "Analysis",
+    description: "Least Cost Path (LCP) analysis refers to calculating the most efficient route between two features while accounting for one or more criteria. This method is widely used in utility planning, urban planning, and environmental applications. The following analysis shows how the LCP methodology was applied to determine the most optimal route for a powerline where multiple criteria are used in calculating the LCP. ",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/5352db90b84c41a187f65fa0ac85da58/data",
+    type: "map",
+    tags: ["Least Cost Path"],
+    metrics: [
+      { label: "Software Used", value: "ArcGIS Pro" },
+      { label: "Data Source", value: "Sample Data" }
+    ],
+    links: {
+      docs: "https://jad.maps.arcgis.com/sharing/rest/content/items/5352db90b84c41a187f65fa0ac85da58/data",
+      docsLabel: "Open Map"
+    }
+  },
+    {
     id: "map-9",
     title: "Medical Spatial Accessibility Index for Santa Clarita, CA",
     tagline: "Analysis",
@@ -639,7 +656,7 @@ export const portfolioItems: PortfolioItem[] = [
     ]
   },
   {
-    id: "dev-1",
+    id: "dev-2",
     title: "NOAA Weather Calendar Heatmap Using Streamlit",
     tagline: "Streamlit",
     description: "This project uses Streamlit to transform raw historical data from the National Oceanic and Atmospheric Administration (NOAA) into an intuitive, visually rich calendar heatmap. Built to address the limitations of standard dataset extraction, the application features three modes that allow users to study a single station's yearly footprints, perform temporal comparisons of the same station across two different years, or run real-time spatial comparisons between two stations. It  parses multiple meteorologic variables including temperature, precipitation, snowfall, and critical wind speeds, and filters complex data arrays into digestible day-by-day calendar heatmaps. By deploying this architecture to Streamlit Cloud, the project leverages a zero-configuration, serverless environment that converts a raw local script into an instantly shareable, cloud-hosted web application. Streamlit Cloud manages the underlying multi-tenant scaling and secure HTTPS data pipelines, allowing the app to smoothly process cross-origin API payloads and coordinate on-demand geospatial bounding-box math seamlessly over the web.",
@@ -652,7 +669,34 @@ export const portfolioItems: PortfolioItem[] = [
     customLinks: [
     ]
   },
-
+  {
+    id: "dev-3",
+    title: "Model to Project and Clip Raster Sets With Different Geographic Transformations",
+    tagline: "ModelBuilder",
+    description: "Batch-projecting rasters can be done using ModelBuilder can be done using a few simple elements: A workspace, a raster iterator, and the projection tool. However, when ArcGIS Pro applies the projection to one raster, an error may occur in the following one if the raster is being projected using a different geographic transformation than its predecessor, most commonly if one raster is in a geographic coordinate system and the other is in a projected coordinate system. The following Model groups the rasters by the input coordinate system type, and applies the projection tool accordingly based on the geographic transformation needed. The model also has an optional output boundary parameter, in the event the rasters need to be clipped to a specific boundary.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/e4902aaad847472988a27429b80e0d2c/data",
+    type: "dev",
+    tags: ["Data Management", "ModelBuilder"],
+    links: {
+      demo: "https://jad.maps.arcgis.com/sharing/rest/content/items/e4902aaad847472988a27429b80e0d2c/data"
+    },
+    customLinks: [
+    ]
+  },
+  {
+    id: "dev-4",
+    title: "Model for Bivariate Display of Two Rasters",
+    tagline: "ModelBuilder",
+    description: "This Model was designed to automate the bivariate mapping of two rasters. ArcGIS Pro does not allow the bivariate symbolization of raster data; the symbology can only be applied to one band in a single layer, hence symbolizing two rasters at the same time is not achievable. The following Model allows users to input two rasters, and converts both rasters to a polygon feature class containing the specified values from each raster. The output will be a single polygon feature class containing both values that can be symbolized with the software's out-of-the-box bivariate symbology.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/a56b36097b1445d29b9c65cf2824fb09/data",
+    type: "dev",
+    tags: ["Data Visualization", "ModelBuilder"],
+    links: {
+      demo: "https://jad.maps.arcgis.com/sharing/rest/content/items/a56b36097b1445d29b9c65cf2824fb09/data"
+    },
+    customLinks: [
+    ]
+  },
 
 //--------------------------------------------------------------------------------------------------
 
@@ -709,5 +753,23 @@ export const portfolioItems: PortfolioItem[] = [
         linkUrl: "https://experience.arcgis.com/experience/51b8cb31b6a841dbbf36f448308aefb1/"
       }
     ]
+  },
+  {
+    id: "project-3",
+    title: "Burglaries in the San Fernando Valley, CA",
+    tagline: "Decision-Making",
+    description: "This study utilizes a variety of analytical tools available in ArcGIS Pro to analyze the spatial patterns and underlying socio-economic drivers of burglaries in the San Fernando Valley, CA. Using 2021 crime data from the Los Angeles Police Department (LAPD), the research formulates both short-term tactical responses and long-term prevention strategies. Tactical analyses employing Kernel Density estimation and the Getis-Ord Gi* statistic revealed significant crime clustering, leading to recommendations for LAPD division redistricting to optimize resource allocation in high-crime hot spots like North Hollywood and Topanga. To develop long-term solutions, an Ordinary Least Squares (OLS) linear regression was conducted at the zip-code level. The regression model identified Median Household Income and the percentage of rental housing units as statistically significant predictors of burglary rates.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/8971a11d17fe49e79b8f70e3cbd07182/data",
+    type: "project",
+    tags: ["Crime", "Decision-Making"],
+    details: {
+      challenge: "To identify both short-term policing solutions and long-term socioeconomic strategies to reduce burglaries in the San Fernando Valley.",
+      solution: "Analyzing the spatial patterns and underlying socio-economic drivers of burglaries in the San Fernando Valley, CA, and proposing the redistricting LAPD boundaries to alleviate the burden on high-crime divisions.",
+      impact: "Implementing these changes will optimize law enforcement resources for faster emergency response times while fostering a sustainable, community-wide reduction in crime by directly addressing its socio-economic roots."
+    },
+    links: {
+      demo: "https://storymaps.arcgis.com/stories/9f967a3c134f48958800816a8fa5ff50"
+    },
+    customLinks: []
   }
 ];
