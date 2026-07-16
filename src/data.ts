@@ -636,6 +636,22 @@ export const portfolioItems: PortfolioItem[] = [
       docsLabel: "Open Chart"
     }
   },
+    {
+    id: "vis-5",
+    title: "Itereractive Heat Calendar: LVMPD Calls for Service",
+    tagline: "Interactive Chart",
+    description: "Calendar heat charts aggregate records based on a Date field and display the results in a calendar grid. Each cell represents a calendar unit, with color indicating the aggregated value for that period. In this app, calls for service from the last 30 days are aggregated in a calendar heatmap displaying call counts per day of the week and time of day over the last 30 days.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/341f7bbc11fa415eabc4107aa9994cb8/data",
+    type: "visualization",
+    tags: ["Python"],
+    metrics: [
+      { label: "Data Source", value: "NOAA NCEI" }
+    ],
+    links: {
+      docs: "https://jad.maps.arcgis.com/apps/instant/charts/index.html?appid=b7f0febe790443fdaf9b35baf34083e7",
+      docsLabel: "Open App"
+    }
+  },
 //--------------------------------------------------------------------------------------------------
   {
     id: "dev-1",
