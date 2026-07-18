@@ -571,6 +571,38 @@ export const portfolioItems: PortfolioItem[] = [
     }
   },
     {
+    id: "vis-7",
+    title: "Drought Monitor Dashboard by State",
+    tagline: "Dashboard",
+    description: "This ArcGIS Dashboard provides weekly drought update fed by Living Atlas' U.S. Drought Monitor Feed. A state filter has been configured to modify data shown by the indicators to reflect the percentage of the state area under that drought level.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/fc0509eaaeee48738ae4065f70a82694/data",
+    type: "visualization",
+    tags: ["Dashboard"],
+    metrics: [
+      { label: "Data Source", value: "USDM" }
+    ],
+    links: {
+      docs: "https://www.arcgis.com/apps/dashboards/f2a40ab112aa455aa0ee9361bd55f0a1",
+      docsLabel: "Open Dashboard"
+    }
+  },
+    {
+    id: "vis-6",
+    title: "Itereractive Heat Calendar: LVMPD Calls for Service",
+    tagline: "Interactive Chart",
+    description: "Calendar heat charts aggregate records based on a Date field and display the results in a calendar grid. Each cell represents a calendar unit, with color indicating the aggregated value for that period. In this app, calls for service from the last 30 days are aggregated in a calendar heatmap displaying call counts per day of the week and time of day over the last 30 days.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/341f7bbc11fa415eabc4107aa9994cb8/data",
+    type: "visualization",
+    tags: ["Instant App"],
+    metrics: [
+      { label: "Data Source", value: "LVMPD" }
+    ],
+    links: {
+      docs: "https://jad.maps.arcgis.com/apps/instant/charts/index.html?appid=b7f0febe790443fdaf9b35baf34083e7",
+      docsLabel: "Open App"
+    }
+  },
+    {
     id: "vis-1",
     title: "Date and Time Heatmap",
     tagline: "Heatmap",
@@ -636,22 +668,7 @@ export const portfolioItems: PortfolioItem[] = [
       docsLabel: "Open Chart"
     }
   },
-    {
-    id: "vis-5",
-    title: "Itereractive Heat Calendar: LVMPD Calls for Service",
-    tagline: "Interactive Chart",
-    description: "Calendar heat charts aggregate records based on a Date field and display the results in a calendar grid. Each cell represents a calendar unit, with color indicating the aggregated value for that period. In this app, calls for service from the last 30 days are aggregated in a calendar heatmap displaying call counts per day of the week and time of day over the last 30 days.",
-    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/341f7bbc11fa415eabc4107aa9994cb8/data",
-    type: "visualization",
-    tags: ["Instant App"],
-    metrics: [
-      { label: "Data Source", value: "LVMPD" }
-    ],
-    links: {
-      docs: "https://jad.maps.arcgis.com/apps/instant/charts/index.html?appid=b7f0febe790443fdaf9b35baf34083e7",
-      docsLabel: "Open App"
-    }
-  },
+
 //--------------------------------------------------------------------------------------------------
   {
     id: "dev-1",
