@@ -588,7 +588,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
     {
     id: "vis-6",
-    title: "Itereractive Heat Calendar: LVMPD Calls for Service",
+    title: "Interactive Heat Calendar: LVMPD Calls for Service",
     tagline: "Interactive Chart",
     description: "Calendar heat charts aggregate records based on a Date field and display the results in a calendar grid. Each cell represents a calendar unit, with color indicating the aggregated value for that period. In this app, calls for service from the last 30 days are aggregated in a calendar heatmap displaying call counts per day of the week and time of day over the last 30 days.",
     image: "https://jad.maps.arcgis.com/sharing/rest/content/items/341f7bbc11fa415eabc4107aa9994cb8/data",
@@ -600,7 +600,24 @@ export const portfolioItems: PortfolioItem[] = [
     links: {
       docs: "https://jad.maps.arcgis.com/apps/instant/charts/index.html?appid=b7f0febe790443fdaf9b35baf34083e7",
       docsLabel: "Open App"
-    }
+    },
+  },
+    {
+    id: "vis-8",
+    title: "LVMPD Street-Level Violence Calls for Service",
+    tagline: "Dashboard",
+    description: "This is an ArcGIS dashboard showing calls for service from the last 30 days aggregated into point clusters on the map, filtered downn to the street-level violence calls call types. The dashboard allows users to filter the data by ZIP Code, call type, and time range, where the last 7 days is default.",
+    image: "https://jad.maps.arcgis.com/sharing/rest/content/items/1b0572db561d4d68a1f901455c9ab28c/data",
+    type: "visualization",
+    tags: ["Dashboard"],
+    metrics: [
+      { label: "Data Source", value: "LVMPD" }
+    ],
+    links: {
+      docs: "https://jad.maps.arcgis.com/apps/dashboards/0e64cc9e810c48d9bddb1c33bb67a123",
+      docsLabel: "Open App"
+    },
+
   },
     {
     id: "vis-1",
