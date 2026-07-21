@@ -566,7 +566,7 @@ export const portfolioItems: PortfolioItem[] = [
       { label: "Data Source", value: "Live PWS Data From Wunderground" }
     ],
     links: {
-      docs: "https://jad.maps.arcgis.com/apps/dashboards/fbcc49c47c324bdf9f8c04dc09b3a3a8",
+      docs: "https://jad.maps.arcgis.com/apps/instant/portfolio/index.html?appid=2ae75ecfdfb14166b6b549871fb65ddc",
       docsLabel: "Open Dashboard"
     }
   },
