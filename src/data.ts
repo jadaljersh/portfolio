@@ -557,17 +557,17 @@ export const portfolioItems: PortfolioItem[] = [
     id: "vis-5",
     title: "Personal Weather Station Monitor",
     tagline: "Dashboard",
-    description: "This ArcGIS Dashboard provides real-time personal weather station (PWS) data, combining current conditions, forecasts, and environmental metrics in a clean, easy-to-read interface. The dashboard highlights the current temperature with dynamic color formatting created using Arcade expressions, allowing perceived temperature values to stand out based on predefined color thresholds. Supporting indicators display current high and low temperatures, wind speed and direction, humidity, dew point, moon phase, temperature trends, and a five-day forecast, along with a map displaying NWS alerts. Behind the scenes, the dashboard is powered by a table that is automatically updated through scheduled Python jobs running on a local computer, ensuring that the displayed weather information remains current without requiring manual updates.",
+    description: "This ArcGIS Portfolio Instant App provides real-time personal weather station (PWS) data through 2 ArcGIS Dashboards and an Experience, combining current conditions, forecasts, and environmental metrics in a clean, easy-to-read interface. The dashboard highlights the current temperature with dynamic color formatting created using Arcade expressions, allowing perceived temperature values to stand out based on predefined color thresholds. Supporting indicators display current high and low temperatures, wind speed and direction, humidity, dew point, temperature trends, along with a map displaying NWS alerts. The second Dashboard provides a 5-day forecast for the same location. The Experience on the 3rd tab displays today's high and low temperatures for the Spring Mountains at various elevations. Behind the scenes, the dashboards are powered by multiple tables that are automatically updated through scheduled Python jobs running on a local computer, ensuring that the displayed weather information remains current without requiring manual updates.",
     image: "https://jad.maps.arcgis.com/sharing/rest/content/items/11f368f5ee884cf2a9239a00c21e8d2a/data",
     type: "visualization",
-    tags: ["Arcade", "Dashboard"],
+    tags: ["Arcade", "Dashboard", "Experience Builder", "Instant App"],
     metrics: [
-      { label: "Software Used", value: "ArcGIS Dashboards" },
+      { label: "Software Used", value: "ArcGIS Dashboards, Experience Builder, and Instant App" },
       { label: "Data Source", value: "Live PWS Data From Wunderground" }
     ],
     links: {
       docs: "https://jad.maps.arcgis.com/apps/instant/portfolio/index.html?appid=2ae75ecfdfb14166b6b549871fb65ddc",
-      docsLabel: "Open Dashboard"
+      docsLabel: "Open Carousel"
     }
   },
     {
